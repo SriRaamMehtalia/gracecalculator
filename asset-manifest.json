@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gracecalculator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/gracecalculator/static/js/main.0ab9c53e.chunk.js",
+    "main.js.map": "/gracecalculator/static/js/main.0ab9c53e.chunk.js.map",
+    "runtime-main.js": "/gracecalculator/static/js/runtime-main.f98c5dc9.js",
+    "runtime-main.js.map": "/gracecalculator/static/js/runtime-main.f98c5dc9.js.map",
+    "static/js/2.dc766714.chunk.js": "/gracecalculator/static/js/2.dc766714.chunk.js",
+    "static/js/2.dc766714.chunk.js.map": "/gracecalculator/static/js/2.dc766714.chunk.js.map",
+    "index.html": "/gracecalculator/index.html",
+    "precache-manifest.3b5327c9e91844439552b48c006ecb45.js": "/gracecalculator/precache-manifest.3b5327c9e91844439552b48c006ecb45.js",
+    "service-worker.js": "/gracecalculator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/gracecalculator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.dc766714.chunk.js.LICENSE.txt": "/gracecalculator/static/js/2.dc766714.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/gracecalculator/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f98c5dc9.js",
+    "static/js/2.dc766714.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.0ab9c53e.chunk.js"
+  ]
+}
