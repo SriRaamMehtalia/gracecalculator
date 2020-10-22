@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3cde01c2a0a22560f6a7df29eaae7d1",
+    "revision": "0f53aa469e1bf499cb6a72918e4af306",
     "url": "/gracecalculator/index.html"
   },
   {
-    "revision": "781a1ae6e8d7ac358957",
+    "revision": "18df9a65bfc57bbada82",
     "url": "/gracecalculator/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gracecalculator/static/js/2.60422b91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "781a1ae6e8d7ac358957",
-    "url": "/gracecalculator/static/js/main.e73a4c2c.chunk.js"
+    "revision": "18df9a65bfc57bbada82",
+    "url": "/gracecalculator/static/js/main.fa22d5d6.chunk.js"
   },
   {
     "revision": "bd2282b1e3d076444a01",
