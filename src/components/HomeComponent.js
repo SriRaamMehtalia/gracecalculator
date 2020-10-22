@@ -19,6 +19,10 @@ export default class HomeComponent extends React.Component {
   addComp() {
     console.log("Ayy")
     const compOptn = this.state.compinfo
+
+    if (isNaN(compOptn.percent)) {
+      alert("Percent must be a number")
+    } else {
     this.setState((prevState) => {
       return {
         options: [
@@ -27,10 +31,26 @@ export default class HomeComponent extends React.Component {
         ]
       }
     })
-    console.log(this.state.options)
+  }
+  console.log(this.state.options)
+  }
+
+  allOptionsGood() {
+    let count = 0;
+    for(let i = 0; i < this.state.options.length; i++) {
+      count += parseInt(this.state.options[i].percent)
+    }
+    if (count != 100) {
+      alert("Percentages should add up to 100!");
+      window.location.reload(false);
+    }
   }
 
   render() {
+
+    if (1 == 2) {
+
+    }
     return(
       <div className="container">
       <h2> Please input your grade breakdown here </h2>
@@ -57,7 +77,7 @@ export default class HomeComponent extends React.Component {
         value={this.state.compinfo.percent}
         onChange={(e) => this.setState({compinfo: {name: this.state.compinfo.name, percent: this.handleChange(e)}})}/>
       <button className="btn" onClick={() => this.addComp()}>Add This</button>
-      <Link to={{pathname: '/grades', breakdown: this.state.options}}>Enter assignment and test grades</Link>
+      <Link to={{pathname: '/grades', breakdown: this.state.options}}><button type="button" onClick={() => this.allOptionsGood()}>Enter specifics</button></Link>
 
       </div>
     )
