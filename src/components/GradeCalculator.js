@@ -12,19 +12,19 @@ class GradeCalculator extends React.Component {
           <h1> Grade Calculator</h1>
 
           <Route
-            path='/'
+            path='/gracecalculator'
             exact={true}
             component={HomeComponent}
           />
 
           <Route
-            path='/grades'
+            path='/gracecalculator/grades'
             exact={true}
             component={GradeComponent}
           />
 
           <Route
-            path='/results'
+            path='/gracecalculator/results'
             exact={true}
             component={ResultComponent}/>
 
