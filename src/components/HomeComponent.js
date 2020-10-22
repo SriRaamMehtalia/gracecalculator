@@ -57,7 +57,7 @@ export default class HomeComponent extends React.Component {
         value={this.state.compinfo.percent}
         onChange={(e) => this.setState({compinfo: {name: this.state.compinfo.name, percent: this.handleChange(e)}})}/>
       <button className="btn" onClick={() => this.addComp()}>Add This</button>
-      <button className="btn">Enter assignment and test grades</button>
+      <Link to={{pathname: '/grades', breakdown: this.state.options}}>Enter assignment and test grades</Link>
 
       </div>
     )
