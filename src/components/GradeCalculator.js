@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import HomeComponent from "./HomeComponent"
 import ResultComponent from "./ResultComponent"
+import GradeComponent from "./GradeComponent"
 
 class GradeCalculator extends React.Component {
   render() {
@@ -14,6 +15,12 @@ class GradeCalculator extends React.Component {
             path='/'
             exact={true}
             component={HomeComponent}
+          />
+
+          <Route
+            path='/grades'
+            exact={true}
+            component={GradeComponent}
           />
 
           <Route

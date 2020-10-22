@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-export default class HomeComponent extends React.Component {
+export default class GradeComponent extends React.Component {
   render() {
     return(
       <div className="container">
-        <h2> Here are the results </h2>
+        <h2> Now input the grades </h2>
       </div>
     )
   }
