@@ -6,7 +6,33 @@ export default class GradeComponent extends React.Component {
 
   state = {
     breakdowns: this.props.location.breakdown,
-    genlist: []
+    grades_per_subgroup: {},
+    current_grade: {
+      category: "",
+      grade: ""
+    }
+  }
+
+  handleChange(event) {
+    return event.target.value
+  }
+
+  addComp() {
+    console.log("Ayy")
+    const curr_grade = this.state.current_grade
+
+    if (isNaN(curr_grade.grade)) {
+      alert("Grade must be a number")
+    } else {
+      const addGrade = { ...this.state.grades_per_subgroup[curr_grade.category], curr_grade}
+      const updateAllGrades = {...this.state.grades_per_subgroup, addGrade}
+      this.setState({ grades_per_subgroup: updateAllGrades})
+    }
+  }
+
+  allOptionsGood() {
+    console.log(this.state)
+    let count = 0;
   }
 
 
@@ -24,6 +50,15 @@ export default class GradeComponent extends React.Component {
           breakdown={optn}/>)
         }
       </ul>
+
+      <input type="text" placeholder="e.g. Assignments" title="Name of subgroup of grades"
+        value={this.state.current_grade.category}
+        onChange={(e) => this.setState({current_grade: {grade: this.state.current_grade.grade, category: this.handleChange(e)}})}/>
+      <input type="text" pattern="[0-9]*" title="How much it is worth"
+        value={this.state.current_grade.grade}
+        onChange={(e) => this.setState({current_grade: {category: this.state.current_grade.category, grade: this.handleChange(e)}})}/>
+      <button className="btn" onClick={() => this.addComp()}>Add This</button>
+      <Link to={{pathname: '/results', breakdown: this.state.breakdown, subgroups: this.state.grades_per_subgroup }}><button type="button" onClick={() => this.allOptionsGood()}>Enter specifics</button></Link>
       </div>
     )
   }
