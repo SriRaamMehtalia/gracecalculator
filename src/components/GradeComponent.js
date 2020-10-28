@@ -24,9 +24,14 @@ export default class GradeComponent extends React.Component {
     if (isNaN(curr_grade.grade)) {
       alert("Grade must be a number")
     } else {
-      const addGrade = { ...this.state.grades_per_subgroup[curr_grade.category], curr_grade}
-      const updateAllGrades = {...this.state.grades_per_subgroup, addGrade}
-      this.setState({ grades_per_subgroup: updateAllGrades})
+      if(curr_grade.category in this.state.grades_per_subgroup) {
+        const addGrade = [ ...this.state.grades_per_subgroup[curr_grade.category], curr_grade]
+        const updateAllGrades = {...this.state.grades_per_subgroup, addGrade}
+        this.setState({ grades_per_subgroup: updateAllGrades})
+      } else {
+        var newInput = Object.assign({}, this.state.grades_per_subgroup, {[curr_grade.category]: [curr_grade.grade]})
+        this.setState({ grades_per_subgroup: newInput})
+      }
     }
   }
 
