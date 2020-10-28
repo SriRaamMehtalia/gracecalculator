@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/gracecalculator/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/gracecalculator/static/js/main.fa22d5d6.chunk.js",
-    "main.js.map": "/gracecalculator/static/js/main.fa22d5d6.chunk.js.map",
+    "main.js": "/gracecalculator/static/js/main.3c4f4fe3.chunk.js",
+    "main.js.map": "/gracecalculator/static/js/main.3c4f4fe3.chunk.js.map",
     "runtime-main.js": "/gracecalculator/static/js/runtime-main.f98c5dc9.js",
     "runtime-main.js.map": "/gracecalculator/static/js/runtime-main.f98c5dc9.js.map",
-    "static/js/2.60422b91.chunk.js": "/gracecalculator/static/js/2.60422b91.chunk.js",
-    "static/js/2.60422b91.chunk.js.map": "/gracecalculator/static/js/2.60422b91.chunk.js.map",
+    "static/js/2.8cdff5d5.chunk.js": "/gracecalculator/static/js/2.8cdff5d5.chunk.js",
+    "static/js/2.8cdff5d5.chunk.js.map": "/gracecalculator/static/js/2.8cdff5d5.chunk.js.map",
     "index.html": "/gracecalculator/index.html",
-    "precache-manifest.d85e5e31a55ac669d200c0f46d0aa4d7.js": "/gracecalculator/precache-manifest.d85e5e31a55ac669d200c0f46d0aa4d7.js",
+    "precache-manifest.41dafc71b09113d20c6701770c3730c4.js": "/gracecalculator/precache-manifest.41dafc71b09113d20c6701770c3730c4.js",
     "service-worker.js": "/gracecalculator/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/gracecalculator/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.60422b91.chunk.js.LICENSE.txt": "/gracecalculator/static/js/2.60422b91.chunk.js.LICENSE.txt",
+    "static/js/2.8cdff5d5.chunk.js.LICENSE.txt": "/gracecalculator/static/js/2.8cdff5d5.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/gracecalculator/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f98c5dc9.js",
-    "static/js/2.60422b91.chunk.js",
+    "static/js/2.8cdff5d5.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.fa22d5d6.chunk.js"
+    "static/js/main.3c4f4fe3.chunk.js"
   ]
 }
