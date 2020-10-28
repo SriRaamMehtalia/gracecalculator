@@ -24,7 +24,7 @@ class GradeCalculator extends React.Component {
           />
 
           <Route
-            path='/gracecalculator/results'
+            path='/results'
             exact={true}
             component={ResultComponent}/>
 
